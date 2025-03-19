@@ -27,6 +27,9 @@ cd .docker
 docker compose up -d
 docker exec -it konkord_php bash
 cd laravel
+composer install
+cp .env.example .env
+php artisan key:generate
 php artisan migrate
 ```
 
