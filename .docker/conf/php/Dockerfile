@@ -41,7 +41,5 @@ RUN chmod gu+rw /var/run \
 
 WORKDIR /var/www
 
-RUN cd /var/www/laravel \
-    php artisan migrate
 
 CMD ["/start.sh"]

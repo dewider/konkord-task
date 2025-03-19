@@ -18,11 +18,7 @@ services:
             - ${COMPOSE_PROJECT_NAME}
     php:
         container_name: ${COMPOSE_PROJECT_NAME}_php
-        # depends_on:
-        #     - mysql
         build: ./conf/php
-        # links:
-            # - mysql
         volumes:
             - ./..:/var/www
             - ~/.ssh:/root/.ssh
@@ -42,25 +38,6 @@ services:
             - ${COMPOSE_PROJECT_NAME}
         extra_hosts:
             - host.docker.internal:host-gateway
-    # mysql:
-    #     image: mysql:8.4
-    #     ports:
-    #         - "3306:3306"
-    #     volumes:
-    #         - ./data/mysql:/var/lib/mysql
-    #     environment:
-    #         MYSQL_DATABASE: ${COMPOSE_PROJECT_NAME}
-    #         MYSQL_ALLOW_EMPTY_PASSWORD: 'yes'
-    #         TZ: Europe/Moscow
-    #     networks:
-    #         - ${COMPOSE_PROJECT_NAME}
-    # memcached:
-    #     container_name: ${COMPOSE_PROJECT_NAME}_memcached
-    #     image: memcached:alpine3.16
-    #     ports:
-    #         - "11211:11211"
-    #     networks:
-    #         - ${COMPOSE_PROJECT_NAME}
 
 networks:
     konkord:
