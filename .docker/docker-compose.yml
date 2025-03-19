@@ -1,0 +1,67 @@
+version: '2'
+
+services:
+    nginx:
+        image: nginx:1.21.6
+        ports:
+            - "80:80"
+            #- "443:443"
+        volumes:
+            - ./conf/nginx:/etc/nginx/conf.d
+            - ./..:/var/www
+            - ./logs/nginx:/var/log/nginx
+        links:
+            - php
+        environment:
+            TZ: Europe/Moscow
+        networks:
+            - ${COMPOSE_PROJECT_NAME}
+    php:
+        container_name: ${COMPOSE_PROJECT_NAME}_php
+        # depends_on:
+        #     - mysql
+        build: ./conf/php
+        # links:
+            # - mysql
+        volumes:
+            - ./..:/var/www
+            - ~/.ssh:/root/.ssh
+            - ./conf/php/hosts_default:/etc/hosts_default:ro
+            - ./conf/php/hosts:/etc/hosts
+            - ./conf/php/start.sh:/start.sh
+            - ./conf/php/php.ini:/usr/local/etc/php/conf.d/40-custom.ini
+            - ./logs/php:/var/log/php
+        command: >
+            bash -c "
+            chmod u+x  /start.sh
+            && /start.sh"
+        environment:
+            TZ: Europe/Moscow
+        user: "www-data:www-data"
+        networks:
+            - ${COMPOSE_PROJECT_NAME}
+        extra_hosts:
+            - host.docker.internal:host-gateway
+    # mysql:
+    #     image: mysql:8.4
+    #     ports:
+    #         - "3306:3306"
+    #     volumes:
+    #         - ./data/mysql:/var/lib/mysql
+    #     environment:
+    #         MYSQL_DATABASE: ${COMPOSE_PROJECT_NAME}
+    #         MYSQL_ALLOW_EMPTY_PASSWORD: 'yes'
+    #         TZ: Europe/Moscow
+    #     networks:
+    #         - ${COMPOSE_PROJECT_NAME}
+    # memcached:
+    #     container_name: ${COMPOSE_PROJECT_NAME}_memcached
+    #     image: memcached:alpine3.16
+    #     ports:
+    #         - "11211:11211"
+    #     networks:
+    #         - ${COMPOSE_PROJECT_NAME}
+
+networks:
+    konkord:
+        driver: bridge

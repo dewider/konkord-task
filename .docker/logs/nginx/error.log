@@ -1,0 +1,106 @@
+2025/03/19 16:07:12 [notice] 1#1: using the "epoll" event method
+2025/03/19 16:07:12 [notice] 1#1: nginx/1.21.6
+2025/03/19 16:07:12 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2025/03/19 16:07:12 [notice] 1#1: OS: Linux 5.15.167.4-microsoft-standard-WSL2
+2025/03/19 16:07:12 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2025/03/19 16:07:12 [notice] 1#1: start worker processes
+2025/03/19 16:07:12 [notice] 1#1: start worker process 23
+2025/03/19 16:07:12 [notice] 1#1: start worker process 24
+2025/03/19 16:16:57 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2025/03/19 16:16:57 [notice] 24#24: gracefully shutting down
+2025/03/19 16:16:57 [notice] 24#24: exiting
+2025/03/19 16:16:57 [notice] 24#24: exit
+2025/03/19 16:16:57 [notice] 23#23: gracefully shutting down
+2025/03/19 16:16:57 [notice] 23#23: exiting
+2025/03/19 16:16:57 [notice] 23#23: exit
+2025/03/19 16:16:57 [notice] 1#1: signal 17 (SIGCHLD) received from 24
+2025/03/19 16:16:57 [notice] 1#1: worker process 23 exited with code 0
+2025/03/19 16:16:57 [notice] 1#1: worker process 24 exited with code 0
+2025/03/19 16:16:57 [notice] 1#1: exit
+2025/03/19 16:17:26 [notice] 1#1: using the "epoll" event method
+2025/03/19 16:17:26 [notice] 1#1: nginx/1.21.6
+2025/03/19 16:17:26 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2025/03/19 16:17:26 [notice] 1#1: OS: Linux 5.15.167.4-microsoft-standard-WSL2
+2025/03/19 16:17:26 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2025/03/19 16:17:26 [notice] 1#1: start worker processes
+2025/03/19 16:17:26 [notice] 1#1: start worker process 22
+2025/03/19 16:17:26 [notice] 1#1: start worker process 23
+2025/03/19 16:17:28 [error] 23#23: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 172.22.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "fastcgi://172.22.0.4:9000", host: "localhost"
+2025/03/19 16:35:58 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2025/03/19 16:35:58 [notice] 22#22: gracefully shutting down
+2025/03/19 16:35:58 [notice] 22#22: exiting
+2025/03/19 16:35:58 [notice] 22#22: exit
+2025/03/19 16:35:58 [notice] 23#23: gracefully shutting down
+2025/03/19 16:35:58 [notice] 23#23: exiting
+2025/03/19 16:35:58 [notice] 23#23: exit
+2025/03/19 16:35:58 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2025/03/19 16:35:58 [notice] 1#1: worker process 22 exited with code 0
+2025/03/19 16:35:58 [notice] 1#1: worker process 23 exited with code 0
+2025/03/19 16:35:58 [notice] 1#1: exit
+2025/03/19 16:36:40 [notice] 1#1: using the "epoll" event method
+2025/03/19 16:36:40 [notice] 1#1: nginx/1.21.6
+2025/03/19 16:36:40 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2025/03/19 16:36:40 [notice] 1#1: OS: Linux 5.15.167.4-microsoft-standard-WSL2
+2025/03/19 16:36:40 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2025/03/19 16:36:40 [notice] 1#1: start worker processes
+2025/03/19 16:36:40 [notice] 1#1: start worker process 22
+2025/03/19 16:36:40 [notice] 1#1: start worker process 23
+2025/03/19 16:43:15 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2025/03/19 16:43:15 [notice] 23#23: gracefully shutting down
+2025/03/19 16:43:15 [notice] 22#22: gracefully shutting down
+2025/03/19 16:43:15 [notice] 23#23: exiting
+2025/03/19 16:43:15 [notice] 22#22: exiting
+2025/03/19 16:43:15 [notice] 23#23: exit
+2025/03/19 16:43:15 [notice] 22#22: exit
+2025/03/19 16:43:15 [notice] 1#1: signal 17 (SIGCHLD) received from 23
+2025/03/19 16:43:15 [notice] 1#1: worker process 23 exited with code 0
+2025/03/19 16:43:15 [notice] 1#1: signal 29 (SIGIO) received
+2025/03/19 16:43:15 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2025/03/19 16:43:15 [notice] 1#1: worker process 22 exited with code 0
+2025/03/19 16:43:15 [notice] 1#1: exit
+2025/03/19 18:04:55 [notice] 1#1: using the "epoll" event method
+2025/03/19 18:04:55 [notice] 1#1: nginx/1.21.6
+2025/03/19 18:04:55 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2025/03/19 18:04:55 [notice] 1#1: OS: Linux 5.15.167.4-microsoft-standard-WSL2
+2025/03/19 18:04:55 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2025/03/19 18:04:55 [notice] 1#1: start worker processes
+2025/03/19 18:04:55 [notice] 1#1: start worker process 22
+2025/03/19 18:04:55 [notice] 1#1: start worker process 23
+2025/03/19 18:53:21 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2025/03/19 18:53:21 [notice] 22#22: gracefully shutting down
+2025/03/19 18:53:21 [notice] 23#23: gracefully shutting down
+2025/03/19 18:53:21 [notice] 22#22: exiting
+2025/03/19 18:53:21 [notice] 23#23: exiting
+2025/03/19 18:53:21 [notice] 23#23: exit
+2025/03/19 18:53:21 [notice] 22#22: exit
+2025/03/19 18:53:21 [notice] 1#1: signal 17 (SIGCHLD) received from 23
+2025/03/19 18:53:21 [notice] 1#1: worker process 22 exited with code 0
+2025/03/19 18:53:21 [notice] 1#1: worker process 23 exited with code 0
+2025/03/19 18:53:21 [notice] 1#1: exit
+2025/03/19 23:45:49 [notice] 1#1: using the "epoll" event method
+2025/03/19 23:45:49 [notice] 1#1: nginx/1.21.6
+2025/03/19 23:45:49 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2025/03/19 23:45:49 [notice] 1#1: OS: Linux 5.15.167.4-microsoft-standard-WSL2
+2025/03/19 23:45:49 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2025/03/19 23:45:49 [notice] 1#1: start worker processes
+2025/03/19 23:45:49 [notice] 1#1: start worker process 22
+2025/03/19 23:45:49 [notice] 1#1: start worker process 23
+2025/03/20 00:46:39 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2025/03/20 00:46:39 [notice] 23#23: gracefully shutting down
+2025/03/20 00:46:39 [notice] 22#22: gracefully shutting down
+2025/03/20 00:46:39 [notice] 23#23: exiting
+2025/03/20 00:46:39 [notice] 22#22: exiting
+2025/03/20 00:46:39 [notice] 23#23: exit
+2025/03/20 00:46:39 [notice] 22#22: exit
+2025/03/20 00:46:39 [notice] 1#1: signal 17 (SIGCHLD) received from 23
+2025/03/20 00:46:39 [notice] 1#1: worker process 22 exited with code 0
+2025/03/20 00:46:39 [notice] 1#1: worker process 23 exited with code 0
+2025/03/20 00:46:39 [notice] 1#1: exit
+2025/03/20 00:47:40 [notice] 1#1: using the "epoll" event method
+2025/03/20 00:47:40 [notice] 1#1: nginx/1.21.6
+2025/03/20 00:47:40 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2025/03/20 00:47:40 [notice] 1#1: OS: Linux 5.15.167.4-microsoft-standard-WSL2
+2025/03/20 00:47:40 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2025/03/20 00:47:40 [notice] 1#1: start worker processes
+2025/03/20 00:47:40 [notice] 1#1: start worker process 23
+2025/03/20 00:47:40 [notice] 1#1: start worker process 24
