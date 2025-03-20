@@ -3,7 +3,7 @@
 ## API
 ### Передача значения
 ```
-GET /api?sensor={sensorId}
+POST /api?sensor={sensorId}
 ```
 sensorId - id сенсора (обязательный)
 
@@ -12,7 +12,7 @@ key - идентификатор измеряемой величины (обяз
 value - измеряемое значение (обязательный)
 ### Получение значений
 ```
-POST /api?sensor={sensorId}&key={key}&from={from}&to={to}
+GET /api?sensor={sensorId}&key={key}&from={from}&to={to}
 ```
 sensorId - id сенсора (обязательный)<br>
 key - идентификатор измеряемой величины (обязательный)<br>
